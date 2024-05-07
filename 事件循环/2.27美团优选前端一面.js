@@ -1,6 +1,7 @@
 setTimeout(() => {
   console.log(0)
 }, 0)
+
 new Promise(() => {
   console.log(1)
 }).then(() => {
@@ -9,10 +10,6 @@ new Promise(() => {
 
 // 1
 // 0
-
-// 作者：凌乱之风
-// 链接：https://www.nowcoder.com/?type=818_1
-// 来源：牛客网
 
 // 这段代码的运行结果可能会让人意外。尽管 setTimeout 的延迟时间设置为 0，但 console.log(0) 依然在 console.log(1) 后面打印。这是因为 JavaScript 的事件循环和任务队列的工作方式。
 
