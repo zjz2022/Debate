@@ -6,6 +6,7 @@ var num = 1
   var num = 3
   console.log(num)
 })()
+
 /*
 这段代码涉及到JavaScript的变量提升（Hoisting）和作用域规则。这是一段立即执行函数表达式（Immediately Invoked Function Expression，IIFE），在该函数块中的变量会有自己的作用域。这是这段代码运行的步骤：
 
