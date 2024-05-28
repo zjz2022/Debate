@@ -19,3 +19,5 @@ new Promise(function (resolve) {
   console.log('promise3')
 })
 console.log('script end')
+
+// 很简单，没啥好说的

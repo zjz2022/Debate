@@ -26,3 +26,7 @@ new Promise(function (resolve) {
     console.log('promise3', res)
   })
 console.log('script end')
+
+// async function() 是写函数，不会执行
+// fn().then 则是先执行fn()，再执行fn().then
+// await 是直接同步执行的，是await fn() 下面的所有代码，要放入微任务队列，等 fn()执行完再执行

@@ -2,17 +2,21 @@
 
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    reject();
-  }, 1000);
-});
-const promise2 = promise1.catch(() => {
-  return 2;
-});
+    reject()
+  }, 1000)
+})
 
-console.log('promise1', promise1);
-console.log('promise2', promise2);
+const promise2 = promise1.catch(() => {
+  return 2
+})
+
+console.log('promise1', promise1)
+console.log('promise2', promise2)
 
 setTimeout(() => {
-  console.log('promise1', promise1);
-  console.log('promise2', promise2);
-}, 2000);
+  console.log('promise1', promise1)
+  console.log('promise2', promise2)
+}, 2000)
+
+// const promise 是不会执行的，记住这点
+// new Promise 是会执行的
